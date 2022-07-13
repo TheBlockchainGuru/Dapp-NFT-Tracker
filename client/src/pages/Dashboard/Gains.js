@@ -76,8 +76,8 @@ export default function Gains ({nfts, loading, data}) {
                 if (parentNft === null) {
                     result[i].node.timeHeld = 0;
                     result[i].node.costBasis = 0;
-                    result[i].node.revenue = value;
-                    result[i].node.gains = value;
+                    result[i].node.revenue = 0;
+                    result[i].node.gains = 0;
                     result[i].node.roi = '-';
                 } else {
                     result[i].node.timeHeld = ((new Date(nft.node.estimatedConfirmedAt).getTime() 
